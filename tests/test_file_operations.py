@@ -13,7 +13,7 @@ def test_file_creation_and_reading(tmp_path):
     file_path = data_dir / "my_file.txt"
 
     # Записываем в файл текст с помощью удобного метода
-    file_path.write_text("Hello from tmp_path!!!!!")
+    file_path.write_text("Hello from tmp_path!")
 
     # Проверяем, что файл существует и содержит правильный текст
     assert file_path.exists()
