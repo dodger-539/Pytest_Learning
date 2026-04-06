@@ -1,5 +1,5 @@
 import pytest
-from src.utils import is_even
+from src.utils import is_even, check_sign
 
 
 @pytest.mark.testprm
@@ -13,3 +13,10 @@ from src.utils import is_even
 def test_is_even_with_various_numbers(number, expected_result):
     # Логика теста описана всего один раз!
     assert is_even(number) == expected_result
+
+# tests/test_checker.py
+def test_check_sign_positive():
+    assert check_sign(10) == "positive"
+
+def test_c():
+    assert check_sign(0) == "zero or negative"
